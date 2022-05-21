@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import CardSection from "./components/CardSection/CardSection";
+import Navbar from "./components/Navbar/Navbar";
+import SearchBar from "./components/SearchBar/SearchBar";
+import { useGlobalContext } from "./context";
 
 function App() {
+  const { showSearch } = useGlobalContext();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      {showSearch && <SearchBar />}
+      <header className="header container">
+        <Navbar />
       </header>
+      <main className="main container">
+        <CardSection />
+      </main>
+      <footer className="footer">
+        Created by <a href="https://github.io/yunusa-sanusi">Sanusi Yunusa</a> -{" "}
+        <a href="https://devChallenges.io">devChallenges.io</a>
+      </footer>
     </div>
   );
 }
