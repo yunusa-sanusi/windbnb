@@ -79,5 +79,5 @@ $ npm start
 
 ## Contact
 
-- GitHub [@your-username](https://github.com/yunusa-sanusi)
-- Linkedin [@your-twitter](https://linkedin.com/in/sanusi-yunusa)
+- GitHub [@yunusa-sanusi](https://github.com/yunusa-sanusi)
+- Linkedin [@Sanusi Yunusa](https://linkedin.com/in/sanusi-yunusa)
